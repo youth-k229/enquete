@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>アンケート1</title>
+</head>
+<body>
+<h1>アンケート1</h1>
+<br>
+あなたの好きな食べ物を入力してください。
+<br>
+<form th:action="@{/goToTwo}" th:method="post">
+<input type="text" name="food">
+<input type="submit" value="送信">
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>結果</title>
+</head>
+<body>
+<h2>アンケート結果</h2>
+<br>
+あなたが入力した各アンケートは以下の通りです。<br>
+<p th:text="'「1.' + ${food} + '」'"><br>
+<p th:text="'「2.' + ${animal} + '」'"><br>
+<p th:text="'「3.' + ${sports} + '」'"><br>
+です。
+</body>
+</html>

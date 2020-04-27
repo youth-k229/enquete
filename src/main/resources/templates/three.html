@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>アンケート3</title>
+</head>
+<body>
+<h1>アンケート3</h1>
+<br>
+あなたの好きなスポーツを入力してください。
+<br>
+<form th:action="@{/goToResult}" th:method="post">
+<input type="text" name="sports">
+<input type="submit" value="送信">
+</form>
+</body>
+</html>
